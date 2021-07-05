@@ -87,16 +87,10 @@ public class LedSettings extends SettingsPreferenceFragment implements
 
         mBatteryLight = (SystemSettingMasterSwitchPreference)
                 findPreference(KEY_BATT_LIGHT);
-        boolean hasLed = getResources().getBoolean(
-                com.android.internal.R.bool.config_hasNotificationLed);
-        if (hasLed) {
-            boolean enabled = Settings.System.getInt(resolver,
-                    KEY_BATT_LIGHT, 1) == 1;
-            mBatteryLight.setChecked(enabled);
-            mBatteryLight.setOnPreferenceChangeListener(this);
-        } else {
-            mBatteryLight.setVisible(false);
-        }
+        boolean enabled = Settings.System.getInt(resolver,
+                KEY_BATT_LIGHT, 1) == 1;
+        mBatteryLight.setChecked(enabled);
+        mBatteryLight.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

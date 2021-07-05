@@ -25,10 +25,6 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
-    <com.ssos.support.preferences.SwitchPreference
-        android:key="navbar_visibility"
-        android:title="@string/navbar_visibility" />
-
     <PreferenceCategory
         android:title="@string/gestures_navigation_bar_category">
 

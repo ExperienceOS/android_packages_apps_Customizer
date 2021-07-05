@@ -368,7 +368,6 @@
     <string name="lock_fp_icon_no_fp_summary">Эта функция недоступна на устройствах без сканера отпечатка пальца</string>
     <string name="lock_fp_icon_rart_user_summary">Эта функция недоступна на устройствах без зарегистрированных отпечатков пальца</string>
 
-
     <!-- Aggressive battery -->
     <string name="aggressive_battery_saver_title">Агрессивное энергосбережение</string>
     <string name="aggressive_battery_saver_explainer">"Агрессивный режим ожидания - это функция, которая делает систему простоя устройства более агрессивными и игнорирует датчики устройства при переходе в спящий режим.

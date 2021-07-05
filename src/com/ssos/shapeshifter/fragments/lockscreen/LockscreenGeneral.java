@@ -42,7 +42,6 @@ import android.hardware.biometrics.BiometricSourceType;
 import android.hardware.fingerprint.FingerprintManager;
 
 import com.ssos.support.preferences.SystemSettingSwitchPreference;
-import com.ssos.support.preferences.SystemSettingSeekBarPreference;
 import com.ssos.support.preferences.SwitchPreference;
 
 import com.android.internal.util.custom.FodUtils;
@@ -58,11 +57,9 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     private static final String LOCK_FP_ICON = "lock_fp_icon";
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String FINGERPRINT_ERROR_VIB = "fingerprint_error_vib";
-    private static final String KEY_LOCKSCREEN_BLUR = "lockscreen_blur";
 
     private SystemSettingSwitchPreference mLockFPIcon;
     private SwitchPreference mFingerprintVib;
-    private SystemSettingSeekBarPreference mLockscreenBlur;
     private SwitchPreference mFingerprintErrorVib;
 
     static final int MODE_DISABLED = 0;
@@ -135,11 +132,6 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
             }
         } else {
             prefScreen.removePreference(mFingerprintErrorVib);
-        }
-
-        mLockscreenBlur = (SystemSettingSeekBarPreference) findPreference(KEY_LOCKSCREEN_BLUR);
-        if (!com.ssos.shapeshifter.utils.Utils.isBlurSupported()) {
-            mLockscreenBlur.setVisible(false);
         }
 
         mAODPref = findPreference(AOD_SCHEDULE_KEY);

@@ -19,8 +19,7 @@
     android:title="@string/quick_settings_title" >
 
     <PreferenceCategory
-        android:title="@string/qs_tiles_title">
-
+        android:title="@string/qs_panel_bg_use_new_tint">
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="qs_panel_bg_use_new_tint"
             android:title="@string/qs_bg_use_new_tint"

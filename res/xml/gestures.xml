@@ -38,12 +38,6 @@
         settings:controller="com.android.settings.gestures.SwipeToNotificationPreferenceController" />
 
     <Preference
-        android:key="swipe_to_screenshot_summary"
-        android:title="@string/swipe_to_screenshot_title"
-        android:fragment="com.android.settings.gestures.SwipeToScreenshotGestureSettings"
-        settings:controller="com.android.settings.gestures.SwipeToScreenshotPreferenceController" />
-
-    <Preference
         android:key="gesture_double_tap_power_input_summary"
         android:title="@string/double_tap_power_for_camera_title"
         android:fragment="com.android.settings.gestures.DoubleTapPowerSettings"
@@ -90,11 +84,5 @@
         android:title="@string/gesture_prevent_ringing_screen_title"
         android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
         settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController" />
-
-    <Preference
-        android:key="gesture_adaptive_playback_summary"
-        android:title="@string/adaptive_playback_screen_title"
-        android:fragment="com.android.settings.gestures.AdaptivePlaybackGestureSettings"
-        settings:controller="com.android.settings.gestures.AdaptivePlaybackParentPreferenceController" />
 
 </PreferenceScreen>

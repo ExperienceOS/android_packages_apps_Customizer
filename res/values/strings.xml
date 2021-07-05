@@ -480,12 +480,6 @@ Aggressive Standby is a feature that stops apps from running in the background a
     <string name="allow_signature_fake">Allow signature spoofing</string>
     <string name="allow_signature_fake_summary">Allow apps to bypass security systems by pretending to be a different app</string>
 
-    <!-- Fingerprint vibration -->
-    <string name="fprint_error_vib_title">Fingerprint error vibration</string>
-    <string name="fprint_error_vib_summary">Vibrate on error fingerprint authentication</string>
-    <string name="fprint_success_vib_title">Fingerprint authentication vibration</string>
-    <string name="fprint_success_vib_summary">Vibrate on successful fingerprint authentication</string>
-
     <!-- Theme overlays -->
     <string name="overlay_theme_title">Theme overlays</string>
     <string name="overlay_theme_summary">Enable different overlays to customize your device</string>
@@ -503,3 +497,4 @@ Aggressive Standby is a feature that stops apps from running in the background a
     <string name="show_fourg_icon_summary">Display 4G in signal icon instead of LTE</string>
 
 </resources>
+

@@ -37,30 +37,6 @@
         android:defaultValue="true" />
 
     <PreferenceCategory
-        android:title="@string/fprint_subcat">
-
-        <com.ssos.support.preferences.SystemSettingSwitchPreference
-           android:key="lock_fp_icon"
-           android:title="@string/lock_fp_icon_title"
-           android:summary="@string/lock_fp_icon_summary"
-           android:defaultValue="false" />
-
-        <com.ssos.support.preferences.SwitchPreference
-           android:key="fingerprint_error_vib"
-           android:title="@string/fprint_error_vib_title"
-           android:summary="@string/fprint_error_vib_summary"
-           android:persistent="false" />
-
-        <com.ssos.support.preferences.SwitchPreference
-           android:key="fingerprint_success_vib"
-           android:title="@string/fprint_success_vib_title"
-           android:summary="@string/fprint_success_vib_summary"
-           android:persistent="false" />
-
-    </PreferenceCategory>
-
-
-    <PreferenceCategory
         android:key="lockscreen_media_category"
         android:title="@string/lockscreen_media_category">
 

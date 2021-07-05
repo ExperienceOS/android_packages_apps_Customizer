@@ -37,15 +37,12 @@
     <string name="navigationbar_summary">Configure system navigation options</string>
     <string name="gesture_options_title">Gestures</string>
     <string name="gesture_options_summary">Enable/disable device specific user actions</string>
-    <string name="volume_rocker_summary">Set default behavior and actions for vol +/- keys</string>
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Assign actions for physical navigation buttons</string>
 
     <!-- Interface -->
     <string name="quick_settings_title">Quick settings</string>
     <string name="quick_settings_summary">Customize the overall view &amp; functionality</string>
-    <string name="headsup_title">Heads-up</string>
-    <string name="headsup_summary">Configure Heads-up options</string>
     <string name="recents_title">Recents</string>
     <string name="recents_summary">Configure look &amp; feel of recent apps view</string>
     <string name="themer_title">Themer</string>
@@ -56,8 +53,6 @@
     <string name="battery_options_summary">Customize how battery is displayed</string>
     <string name="clock_options_title">Clock options</string>
     <string name="clock_options_summary">Set view options of time &amp; date in statusbar</string>
-    <string name="traffic_title">Network indicator</string>
-    <string name="traffic_summary">Enable &amp; configure network indicator in statusbar</string>
     <string name="status_bar_items_title">Statusbar items</string>
     <string name="status_bar_items_summary">Configure statusbar indicators</string>
 
@@ -146,11 +141,6 @@
     <string name="pixel_navbar_anim_title">Pixel animation</string>
     <string name="pixel_navbar_anim_summary">Toggle home button animation</string>
 
-    <!-- Quicksettings -->
-    <string name="qs_tiles_title">Quicksettings tiles</string>
-    <string name="qs_tile_title_visibility_title">Show tiles title</string>
-    <string name="qs_tile_title_visibility_summary">Show a label under each quicksettings title</string>
-
     <!-- QS rows and columns -->
     <string name="qs_columns_rows_category_title">QS columns and rows</string>
     <string name="qs_rows_columns_title">QS rows and columns</string>
@@ -158,10 +148,6 @@
     <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
     <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
-
-    <!-- QS tiles haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibrate on touch</string>
-    <string name="quick_settings_vibrate_summary">Vibrate when touching QS tiles</string>
 
     <!-- Statusbar Clock -->
     <string name="status_bar_clock_date_title">Clock and Date</string>
@@ -195,10 +181,6 @@
     <string name="clock_date_right">Right of time</string>
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
-
-    <!-- Wakeup options -->
-    <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
-    <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged</string>
 
     <!-- USB configuration -->
     <string name="usb_default_config_title">USB configuration</string>

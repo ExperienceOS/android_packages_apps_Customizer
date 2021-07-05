@@ -58,8 +58,6 @@ public class NavigationBar extends SettingsPreferenceFragment implements
     private static final String SHOW_BACK_ARROW_GESTURE = "show_back_arrow_gesture";
     private static final String PIXEL_ANIMATION_NAVIGATION = "pixel_nav_animation";
     private static final String INVERT_NAVIGATION = "sysui_nav_bar_inverse";
-    private static final String ASSIST_LOCK_HANDLES = "assist_lock_handles";
-    private static final String ASSIST_GLOBAL_HANDLES = "assist_global_handles";
 
     private SecureSettingSwitchPreference mShowBackArrowGesture;
     private SystemSettingSwitchPreference mBackGestureHaptic;

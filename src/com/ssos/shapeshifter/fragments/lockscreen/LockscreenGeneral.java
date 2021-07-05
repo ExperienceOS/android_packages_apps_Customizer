@@ -36,14 +36,6 @@ import com.android.settings.Utils;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import android.hardware.biometrics.BiometricSourceType;
-import android.hardware.fingerprint.FingerprintManager;
-
-import com.ssos.support.preferences.SystemSettingSwitchPreference;
-import com.ssos.support.preferences.SwitchPreference;
-
-import com.android.internal.util.custom.FodUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -51,54 +43,12 @@ import java.util.List;
 public class LockscreenGeneral extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String LOCK_FP_ICON = "lock_fp_icon";
-
-    private SystemSettingSwitchPreference mLockFPIcon;
-
-    private boolean mHasFod;
-    private ContentResolver mResolver;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.lockscreen_general);
-        PreferenceScreen prefScreen = getPreferenceScreen();
-        PreferenceCategory overallPreferences = (PreferenceCategory) findPreference("fod_category");
-        mResolver = getActivity().getContentResolver();
-        Context mContext = getContext();
 
-        boolean enableScreenOffFOD = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_supportScreenOffFod);
-        Preference ScreenOffFODPref = (Preference) findPreference("fod_gesture");
-
-        if (!enableScreenOffFOD){
-            overallPreferences.removePreference(ScreenOffFODPref);
-        }
-
-        if (!getResources().getBoolean(com.android.internal.R.bool.config_supportsInDisplayFingerprint)) {
-            prefScreen.removePreference(findPreference("fod_category"));
-        }
-
-        mLockFPIcon = findPreference(LOCK_FP_ICON);
- 	FingerprintManager fingerprintManager = (FingerprintManager) mContext.getSystemService(Context.FINGERPRINT_SERVICE);
-        mHasFod = FodUtils.hasFodSupport(mContext);
-
-        if (fingerprintManager == null) {
-            mLockFPIcon.setSummary(getString(R.string.unsupported_feature_summary));
-            mLockFPIcon.setEnabled(false);
-        } else if (!fingerprintManager.isHardwareDetected()) {
-            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_no_fp_summary));
-            mLockFPIcon.setEnabled(false);
-        } else if (mHasFod) {
-            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_fod_summary));
-            mLockFPIcon.setEnabled(false);
-        } else if (!fingerprintManager.hasEnrolledFingerprints()) {
-            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_rart_user_summary));
-            mLockFPIcon.setEnabled(false);
-        } else {
-            mLockFPIcon.setSummary(getString(R.string.lock_fp_icon_summary));
-            mLockFPIcon.setEnabled(true);
-        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

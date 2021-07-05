@@ -77,8 +77,6 @@
     <color name="colorRed">#ffeb0028</color>
     <color name="colorCheese">#ffFFD955</color>
 
-    <color name="rgb_icon_tint_color">@*android:color/accent_device_default_dark</color>
-
     <color name="accent_color_default_overlay_color">#725aff</color>
     <color name="accent_color_cinnamon_overlay_color">#c3a6a2</color>
     <color name="accent_color_green_overlay_color">#62ab67</color>

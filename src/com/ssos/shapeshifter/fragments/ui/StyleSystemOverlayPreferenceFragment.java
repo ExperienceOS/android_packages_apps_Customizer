@@ -58,8 +58,6 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.R;
 import com.ssos.support.preferences.SystemSettingListPreference;
 
-import com.ssos.shapeshifter.preferences.CustomOverlayPreferenceController;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -297,8 +295,6 @@ public class StyleSystemOverlayPreferenceFragment extends DashboardFragment impl
                 "android.theme.customization.adaptive_icon_shape"));
         controllers.add(new OverlayCategoryPreferenceController(context,
                 "android.theme.customization.icon_pack"));
-        controllers.add(new CustomOverlayPreferenceController(context,
-                "android.theme.customization.custom_overlays"));
         return controllers;
     }
 

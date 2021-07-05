@@ -39,8 +39,6 @@ import android.hardware.biometrics.BiometricSourceType;
 import android.hardware.fingerprint.FingerprintManager;
 
 import com.ssos.support.preferences.SystemSettingSwitchPreference;
-import com.ssos.support.preferences.SystemSettingListPreference;
-
 import com.android.internal.util.custom.FodUtils;
 
 import java.util.ArrayList;
@@ -69,8 +67,8 @@ public class FodGeneral extends SettingsPreferenceFragment implements
             prefScreen.removePreference(ScreenOffFODPref);
         }
 
-        SystemSettingSwitchPreference AnimaTogglePref = (SystemSettingSwitchPreference) findPreference("fod_recognizing_animation");
-        SystemSettingListPreference AnimaListPref = (SystemSettingListPreference) findPreference("fod_recognizing_animation_list");            
+        Preference AnimaTogglePref = (Preference) findPreference("fod_recognizing_animation");
+        Preference AnimaListPref = (Preference) findPreference("fod_recognizing_animation_list");            
 
         if (!com.android.internal.util.ssos.Utils.isPackageInstalled(mContext,"com.ssos.fod.animations")) {
             prefScreen.removePreference(AnimaTogglePref);

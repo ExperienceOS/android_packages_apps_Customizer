@@ -32,13 +32,6 @@
         android:summary="@string/themer_summary" />
 
     <com.android.settings.widget.CardPreference
-        android:key="headsup_category"
-        android:fragment="com.exos.customizerhub.fragments.ui.HeadsUp"
-        android:icon="@drawable/ic_headsup_background"
-        android:title="@string/headsup_title"
-        android:summary="@string/headsup_summary" />
-
-    <com.android.settings.widget.CardPreference
         android:key="recents_category"
         android:fragment="com.exos.customizerhub.fragments.ui.Recents"
         android:icon="@drawable/ic_recents_background"

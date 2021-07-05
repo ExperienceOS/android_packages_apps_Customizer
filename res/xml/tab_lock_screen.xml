@@ -14,21 +14,4 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <com.android.settings.widget.CardPreference
-        android:key="lockscreen_tuner_category"
-        android:icon="@drawable/ic_lockscreen_tuner_background"
-        android:title="@string/lockscreen_tuner_title"
-        android:summary="@string/lockscreen_tuner_summary">
-        <intent android:action="com.android.settings.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.LockscreenActivity" />
-    </com.android.settings.widget.CardPreference>
-
-    <com.android.settings.widget.CardPreference
-        android:key="lockscreen_general_category"
-        android:fragment="com.exos.customizerhub.fragments.lockscreen.LockscreenGeneral"
-        android:icon="@drawable/ic_lockscreen_general_background"
-        android:title="@string/lockscreen_general_title"
-        android:summary="@string/lockscreen_general_summary" />
-
 </PreferenceScreen>

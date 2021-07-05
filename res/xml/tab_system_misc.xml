@@ -38,11 +38,4 @@
         android:title="@string/miscellaneous_title"
         android:summary="@string/miscellaneous_summary" />
 
-    <com.android.settings.widget.CardPreference
-        android:key="led_settings"
-        android:fragment="com.exos.customizerhub.fragments.system_misc.LedSettings"
-        android:icon="@drawable/ic_led_notifications_background"
-        android:title="@string/led_settings_title"
-        android:summary="@string/led_settings_summary" />
-
 </PreferenceScreen>

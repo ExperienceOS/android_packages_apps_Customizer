@@ -39,13 +39,6 @@
         android:summary="@string/gesture_options_summary" />
 
     <com.android.settings.widget.CardPreference
-        android:key="volume_rocker_category"
-        android:fragment="com.exos.customizerhub.fragments.actions.VolumeRocker"
-        android:icon="@drawable/ic_volume_rocker_background"
-        android:title="@string/volume_rocker_title"
-        android:summary="@string/volume_rocker_summary" />
-
-    <com.android.settings.widget.CardPreference
         android:key="hw_keys_category"
         android:fragment="com.exos.customizerhub.fragments.actions.HWKeys"
         android:icon="@drawable/ic_hwkeys_background"

@@ -18,16 +18,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/quick_settings_title" >
 
-    <PreferenceCategory
-        android:title="@string/qs_panel_bg_use_new_tint">
         <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="qs_panel_bg_use_new_tint"
             android:title="@string/qs_bg_use_new_tint"
             android:entries="@array/qs_tint_entries"
 	    android:entryValues="@array/qs_tint_values"
             android:defaultValue="2" />
-
-    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="qs_columns_rows_category"

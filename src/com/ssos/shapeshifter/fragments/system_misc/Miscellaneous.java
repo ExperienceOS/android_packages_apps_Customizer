@@ -53,10 +53,8 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
-    private static final String POCKET_JUDGE = "pocket_judge";
 
     private ListPreference mHeadsetRingtoneFocus;
-    private Preference mPocketJudge;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,8 +62,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.miscellaneous);
 
         final ContentResolver resolver = getActivity().getContentResolver();
-        final PreferenceScreen prefScreen = getPreferenceScreen();
-        final Resources res = getResources();
 
         mHeadsetRingtoneFocus = (ListPreference) findPreference(RINGTONE_FOCUS_MODE);
         int mHeadsetRingtoneFocusValue = Settings.Global.getInt(resolver,
@@ -73,12 +69,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
         mHeadsetRingtoneFocus.setValue(Integer.toString(mHeadsetRingtoneFocusValue));
         mHeadsetRingtoneFocus.setSummary(mHeadsetRingtoneFocus.getEntry());
         mHeadsetRingtoneFocus.setOnPreferenceChangeListener(this);
-
-        mPocketJudge = (Preference) prefScreen.findPreference(POCKET_JUDGE);
-        boolean mPocketJudgeSupported = res.getBoolean(
-                com.android.internal.R.bool.config_pocketModeSupported);
-        if (!mPocketJudgeSupported)
-            prefScreen.removePreference(mPocketJudge);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -114,13 +104,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
             @Override
             public List<String> getNonIndexableKeys(Context context) {
                 final List<String> keys = super.getNonIndexableKeys(context);
-                final Resources res = context.getResources();
-
-                boolean mPocketJudgeSupported = res.getBoolean(
-                        com.android.internal.R.bool.config_pocketModeSupported);
-                if (!mPocketJudgeSupported)
-                    keys.add(POCKET_JUDGE);
-
                 return keys;
             }
     };

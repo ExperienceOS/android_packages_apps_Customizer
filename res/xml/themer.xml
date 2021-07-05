@@ -36,11 +36,6 @@
         settings:showReset="false"
         android:persistent="false" />
 
-    <Preference
-        android:key="reset"
-        android:title="@string/accent_reset"
-        android:summary="@string/accent_reset_summary" />
-
     <Preference 
         android:title="@string/overlay_theme_title"
         android:summary="@string/overlay_theme_summary" 

@@ -15,7 +15,7 @@
 -->
 <resources>
     <color name="color_active">#FFE0E0E0</color>
-    <color name="color_inactive">#FFA0A0A0</color> 
+    <color name="color_inactive">#FFA0A0A0</color>
 
     <!-- Previews -->
     <color name="preview_container_border">#14FFFFFF</color>
@@ -89,4 +89,5 @@
     <color name="accent_color_orchid_overlay_color">#e076e7</color>
     <color name="accent_color_asus_overlay_color">#89b5f7</color>
     <color name="accent_color_space_overlay_color">#6b87b9</color>
+
 </resources>

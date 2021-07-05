@@ -29,13 +29,6 @@
 	android:key="prebuilt_accents_key" 
 	android:fragment="com.ssos.shapeshifter.fragments.ui.StyleSystemColorPreferenceFragment"/>
 
-    <net.margaritov.preference.colorpicker.ColorPickerPreference
-        android:key="accent_color"
-        android:title="@string/accent_color_title"
-        android:defaultValue="0xFF725AFF"
-        settings:showReset="false"
-        android:persistent="false" />
-
     <Preference 
         android:title="@string/overlay_theme_title"
         android:summary="@string/overlay_theme_summary" 

@@ -49,7 +49,6 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 
-import com.ssos.support.preferences.AppListPreference;
 import com.ssos.support.preferences.PackageListAdapter;
 import com.ssos.support.preferences.PackageListAdapter.PackageItem;
 
@@ -254,7 +253,7 @@ public class SensorBlockSettings extends SettingsPreferenceFragment
         PackageInfo info = mPackageManager.getPackageInfo(pkg.name,
                 PackageManager.GET_META_DATA);
         Preference pref =
-                new AppListPreference(getActivity());
+                new Preference(getActivity());
 
         pref.setKey(pkg.name);
         pref.setTitle(info.applicationInfo.loadLabel(mPackageManager));

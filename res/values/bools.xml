@@ -14,8 +14,8 @@
      limitations under the License.
 -->
 <resources>
-<!-- SHAPESHIFTER TAB CATEGORIES -->
-	<!-- Below is a list of all tabs and categories of ShapeShifter.
+<!-- CUSTOMIZERHUB TAB CATEGORIES -->
+	<!-- Below is a list of all tabs and categories of CustomizerHub.
 		 Once you add a new feature, check to make sure the category
 		 is already set visible. HIDDEN="false", VISIBLE="true". -->
 

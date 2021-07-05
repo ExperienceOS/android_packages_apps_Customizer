@@ -21,7 +21,7 @@
     <PreferenceCategory
         android:title="@string/status_bar_clock_title">
 
-        <com.ssos.support.preferences.SystemSettingSwitchPreference
+        <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="statusbar_clock"
             android:title="@string/status_bar_clock_show"
             android:defaultValue="true" />

@@ -24,7 +24,7 @@
         android:title="@string/usb_default_config_title"
         android:summary="@string/usb_default_config_summary"/>
 
-    <com.ssos.support.preferences.GlobalSettingSwitchPreference
+    <com.android.settings.custom.preference.GlobalSettingSwitchPreference
         android:key="allow_signature_fake"
         android:title="@string/allow_signature_fake"
         android:summary="@string/allow_signature_fake_summary"

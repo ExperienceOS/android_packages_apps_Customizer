@@ -27,14 +27,14 @@
     <PreferenceCategory
         android:title="@string/settings_label">
 
-        <com.ssos.support.preferences.SystemSettingListPreference
+        <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="style_overlay_settings_cards"
             android:title="@string/settings_card"
             android:entries="@array/settings_card_entries"
 	    android:entryValues="@array/settings_card_values"
             android:defaultValue="0" />
 
-        <com.ssos.support.preferences.SystemSettingListPreference
+        <com.android.settings.custom.preference.SystemSettingListPreference
             android:key="style_overlay_settings_dashboard_icons"
             android:title="@string/settings_dashboard"
             android:entries="@array/settings_dashboard_entries"

@@ -20,13 +20,13 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/double_tap_title">
 
-    <com.ssos.support.preferences.SystemSettingSwitchPreference
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_gesture"
         android:title="@string/double_tap_sleep_gesture"
         android:summary="@string/double_tap_sleep_gesture_summary"
         android:defaultValue="true"/>
 
-    <com.ssos.support.preferences.SystemSettingSwitchPreference
+    <com.android.settings.custom.preference.SystemSettingSwitchPreference
         android:key="double_tap_sleep_lockscreen"
         android:title="@string/double_tap_sleep_lockscreen"
         android:summary="@string/double_tap_sleep_lockscreen_summary"

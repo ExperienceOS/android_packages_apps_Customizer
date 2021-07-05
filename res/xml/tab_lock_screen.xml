@@ -26,7 +26,7 @@
 
     <com.android.settings.widget.CardPreference
         android:key="lockscreen_general_category"
-        android:fragment="com.ssos.shapeshifter.fragments.lockscreen.LockscreenGeneral"
+        android:fragment="com.exos.customizerhub.fragments.lockscreen.LockscreenGeneral"
         android:icon="@drawable/ic_lockscreen_general_background"
         android:title="@string/lockscreen_general_title"
         android:summary="@string/lockscreen_general_summary" />

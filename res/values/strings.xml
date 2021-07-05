@@ -16,9 +16,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- ShapeShiftOS dashboard -->
-    <string name="shapeshifter_title">ShapeShifter</string>
-    <string name="shapeshiftos_title">ShapeShiftOS Settings</string>
+    <!-- ExperienceOS dashboard -->
+    <string name="customizerhub_title">CustomizerHub</string>
+    <string name="experienceos_title">ExperienceOS Settings</string>
 
     <!-- Bottom Tabs -->
     <string name="navigation_actions_title">Actions</string>
@@ -65,7 +65,7 @@
     <string name="miscellaneous_title">Miscellaneous</string>
     <string name="miscellaneous_summary">Uncategorized options</string>
     <string name="changelog_title">Changelog</string>
-    <string name="changelog_summary">List of recent commits added to ShapeShiftOS</string>
+    <string name="changelog_summary">List of recent commits added to ExperienceOS</string>
 
 <!-- OTHER -->
     <!-- Empty Preference Screen (if applicable) -->
@@ -82,28 +82,30 @@
     <string name="navigation_navigation_bar_category">Navigation</string>
     <string name="gestures_navigation_bar_category">Gestures</string>
 
-    <!-- ShapeShiftOS device info settings -->
-    <string name="shapeshiftos_version">ShapeShiftOS version</string>
-    <string name="shapeshiftos_version_default">Unknown</string>
+    <!-- ExperienceOS device info settings -->
+    <string name="experienceos_version">ExperienceOS version</string>
+    <string name="experienceos_version_default">Unknown</string>
 
-    <!-- About ShapeShiftOS -->
-    <string name="shapeshiftos_about_title">About ShapeShiftOS</string>
-    <string name="shapeshiftos_about_summary">A little info about the team</string>
-    <string name="shapeshiftos_telegram_title">ShapeShiftOS Telegram Community</string>
-    <string name="shapeshiftos_telegram_summary"><a href="https://t.me/s/shapeshiftos">Join our wonderful community here!</a></string>
-    <string name="shapeshiftos_github_title">ShapeShiftOS Github</string>
-    <string name="shapeshiftos_github_summary"><a href="https://www.github.com/ShapeShiftOS">See the ShapeShiftOS source code here!</a></string>
-    <string name="shapeshiftos_about_info_summary">ShapeShiftOS is a new custom ROM that aims to offer a clean experience. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
-    <string name="shapeshiftos_about_team">ShapeShiftOS team</string>
-    <string name="shapeshiftos_about_ashutosh" translatable="false">AshutoshSundresh (surfaceflinger)</string>
-    <string name="shapeshiftos_about_ashutosh_summary" translatable="false">Lead Developer</string>
-    <string name="shapeshiftos_about_mezz" translatable="false">MezzLasha</string>
-    <string name="shapeshiftos_about_mezz_summary" translatable="false">Designer</string>
-    <string name="shapeshiftos_about_san" translatable="false">san9scurtu</string>
-    <string name="shapeshiftos_about_san_summary" translatable="false">Developer</string>
+    <!-- About ExperienceOS -->
+    <string name="experienceos_about_title">About ExperienceOS</string>
+    <string name="experienceos_about_summary">A little info about the team</string>
+    <string name="experienceos_telegram_title">ExperienceOS Telegram Community</string>
+    <string name="experienceos_telegram_summary"><a href="https://t.me/s/experienceos">Join our wonderful community here!</a></string>
+    <string name="experienceos_github_title">ExperienceOS Github</string>
+    <string name="experienceos_github_summary"><a href="https://www.github.com/ExperienceOS">Check the ExperienceOS source code here!</a></string>
+    <string name="experienceos_about_info_summary">ExperienceOS is a new custom ROM that aims to offer a clean experience. We are an AOSP based custom ROM, twisted with the latest features from all over the Android development community. Quality and stability is our first priority as we are dedicated to bringing you the very best that Android has to offer.</string>
+    <string name="experienceos_about_team">ExperienceOS team</string>
+    <string name="experienceos_about_aoispdev" translatable="false">AOiSPdev</string>
+    <string name="experienceos_about_aoispdev_summary" translatable="false">Lead Developer</string>
+    <!--
+    <string name="experienceos_about_mezz" translatable="false">MezzLasha</string>
+    <string name="experienceos_about_mezz_summary" translatable="false">Designer</string>
+    <string name="experienceos_about_san" translatable="false">san9scurtu</string>
+    <string name="experienceos_about_san_summary" translatable="false">Developer</string>
+    -->
     <string name="about_maintainer">Maintainer</string>
-    <string name="shapeshiftos_about_maintainer">The maintainer for your device is</string>
-    <string name="shapeshiftos_about_maintainer_summary" translatable="false">Too lazy to fill this up</string>
+    <string name="experienceos_about_maintainer">The maintainer for your device is</string>
+    <string name="experienceos_about_maintainer_summary" translatable="false">Too lazy to fill this up</string>
 
     <!-- Reusable strings -->
     <string name="advanced_behavior_title">Advanced behavior</string>

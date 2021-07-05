@@ -16,23 +16,23 @@
 <resources>
 
 <declare-styleable name="BubbleToggleView">
-        <attr name="shapeshiftos_icon" format="reference" />
-        <attr name="shapeshiftos_iconWidth" format="dimension" />
-        <attr name="shapeshiftos_iconHeight" format="dimension" />
-        <attr name="shapeshiftos_shape" format="reference" />
-        <attr name="shapeshiftos_shapeColor" format="color" />
-        <attr name="shapeshiftos_showShapeAlways" format="boolean" />
-        <attr name="shapeshiftos_title" format="string" />
-        <attr name="shapeshiftos_titleSize" format="dimension" />
-        <attr name="shapeshiftos_colorActive" format="color" />
-        <attr name="shapeshiftos_colorInactive" format="color" />
-        <attr name="shapeshiftos_active" format="boolean" />
-        <attr name="shapeshiftos_duration" format="integer" />
-        <attr name="shapeshiftos_padding" format="dimension" />
-        <attr name="shapeshiftos_titlePadding" format="dimension" />
+        <attr name="experienceos_icon" format="reference" />
+        <attr name="experienceos_iconWidth" format="dimension" />
+        <attr name="experienceos_iconHeight" format="dimension" />
+        <attr name="experienceos_shape" format="reference" />
+        <attr name="experienceos_shapeColor" format="color" />
+        <attr name="experienceos_showShapeAlways" format="boolean" />
+        <attr name="experienceos_title" format="string" />
+        <attr name="experienceos_titleSize" format="dimension" />
+        <attr name="experienceos_colorActive" format="color" />
+        <attr name="experienceos_colorInactive" format="color" />
+        <attr name="experienceos_active" format="boolean" />
+        <attr name="experienceos_duration" format="integer" />
+        <attr name="experienceos_padding" format="dimension" />
+        <attr name="experienceos_titlePadding" format="dimension" />
     </declare-styleable>
     <declare-styleable name="BubbleNavigationConstraintView">
-        <attr name="shapeshiftos_mode">
+        <attr name="experienceos_mode">
             <enum name="spread" value="0" />
             <enum name="inside" value="1" />
             <enum name="packed" value="2" />

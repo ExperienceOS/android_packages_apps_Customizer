@@ -27,13 +27,13 @@
         android:title="@string/prebuilt_accents_title"
         android:summary="@string/prebuilt_accents_summary" 
 	android:key="prebuilt_accents_key" 
-	android:fragment="com.ssos.shapeshifter.fragments.ui.StyleSystemColorPreferenceFragment"/>
+	android:fragment="com.exos.customizerhub.fragments.ui.StyleSystemColorPreferenceFragment"/>
 
     <Preference 
         android:title="@string/overlay_theme_title"
         android:summary="@string/overlay_theme_summary" 
         android:key="prebuilt_overlays_key" 
-        android:fragment="com.ssos.shapeshifter.fragments.ui.StyleSystemOverlayPreferenceFragment"/>
+        android:fragment="com.exos.customizerhub.fragments.ui.StyleSystemOverlayPreferenceFragment"/>
 
     <ListPreference
         android:layout="@layout/themes_font_preview"

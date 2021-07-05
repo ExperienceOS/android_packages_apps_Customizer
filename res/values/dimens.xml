@@ -24,13 +24,13 @@
     <dimen name="default_icon_size">24dp</dimen>
 
     <!-- Where the category icon will start (from the left) -->
-    <dimen name="shapeshifter_cat_icon_image_inset">6dp</dimen>
+    <dimen name="customizerhub_cat_icon_image_inset">6dp</dimen>
 
     <!-- Dashboard image tile size -->
-    <dimen name="ssos_dashboard_tile_image_size">36dp</dimen>
+    <dimen name="exos_dashboard_tile_image_size">36dp</dimen>
 
     <!-- Dashboard foreground image size -->
-    <dimen name="ssos_dashboard_tile_foreground_image_size">24dp</dimen>
+    <dimen name="exos_dashboard_tile_foreground_image_size">24dp</dimen>
 
     <!-- Color picker -->
     <dimen name="color_mode_preview_height">320dp</dimen>

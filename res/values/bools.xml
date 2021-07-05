@@ -23,20 +23,16 @@
     <bool name="powerbutton_category_isVisible">true</bool>
     <bool name="navigationbar_category_isVisible">true</bool>
     <bool name="gestures_category_isVisible">true</bool>
-    <bool name="volumerocker_category_isVisible">true</bool>
     <bool name="hwkeys_category_isVisible">false</bool>
 
     <!-- Interface tab -->
-    <bool name="headsup_category_isVisible">true</bool>
     <bool name="recents_category_isVisible">false</bool>
     <bool name="quick_settings_category_isVisible">true</bool>
     <bool name="themer_category_isVisible">true</bool>
-    <bool name="pulse_category_isVisible">true</bool>
 
     <!-- StatusBar tab -->
     <bool name="battery_category_isVisible">true</bool>
     <bool name="clock_category_isVisible">true</bool>
-    <bool name="traffic_category_isVisible">true</bool>
     <bool name="statusbar_icon_blacklist_category_isVisible">true</bool>
 
     <!-- LockScreen tab -->
@@ -50,13 +46,5 @@
     <bool name="general_notifications_category_isVisible">true</bool>
     <bool name="miscellaneous_category_isVisible">true</bool>
     <bool name="changelog_category_isVisible">true</bool>
-    <bool name="led_settings_category_isVisible">true</bool>
-
-<!-- BOOLEANS FOR FEATURES -->
-    <!-- Whether to display Motion Sense setting -->
-    <bool name="has_aware">false</bool>
-
-    <!-- Whether to display active edge category -->
-    <bool name="has_active_edge">false</bool>
 
 </resources>

@@ -15,20 +15,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.android.settings.widget.CardPreference
-        android:key="lockscreen_aosp_category"
-        android:fragment="com.android.settings.security.LockscreenDashboardFragment"
-        android:icon="@drawable/ic_lockscreen_aosp_background"
-        android:title="@string/lockscreen_aosp_title"
-        android:summary="@string/lockscreen_aosp_summary" />
-
-    <com.android.settings.widget.CardPreference
-        android:key="lockscreen_weather"
-        android:fragment="com.ssos.shapeshifter.fragments.lockscreen.LockscreenWeather"
-        android:icon="@drawable/ic_lockscreen_weather_background"
-        android:title="@string/lockscreen_weather_title"
-        android:summary="@string/lockscreen_weather_summary" />
-
-    <com.android.settings.widget.CardPreference
         android:key="lockscreen_tuner_category"
         android:icon="@drawable/ic_lockscreen_tuner_background"
         android:title="@string/lockscreen_tuner_title"

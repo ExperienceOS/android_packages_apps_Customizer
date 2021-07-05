@@ -35,13 +35,11 @@ public class InterfaceTab extends SettingsPreferenceFragment implements
     private static final String HEADSUP_CATEGORY = "headsup_category";
     private static final String RECENTS_CATEGORY = "recents_category";
     private static final String THEMER_CATEGORY = "themer_category";
-    private static final String PULSE_CATEGORY = "pulse_category";
 
     private CardPreference mQuickSettings;
     private CardPreference mHeadsup;
     private CardPreference mRecents;
     private CardPreference mThemer;
-    private CardPreference mPulse;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,12 +77,6 @@ public class InterfaceTab extends SettingsPreferenceFragment implements
             mThemer.setEnabled(hasCustomThemesAvailable());
         }
 
-        CardPreference mPulse = findPreference("pulse_category");
-        if (!getResources().getBoolean(R.bool.pulse_category_isVisible)) {
-            getPreferenceScreen().removePreference(mPulse);
-        } else {
-            mRecents = (CardPreference) findPreference(PULSE_CATEGORY);
-        }
     }
 
     @Override

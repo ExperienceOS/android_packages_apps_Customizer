@@ -18,48 +18,4 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/general_notifications_title" >
 
-    <PreferenceCategory
-        android:title="@string/general_notifications_title">
-
-    <!-- Supress notifications if screen is on -->
-    <com.ssos.support.preferences.SystemSettingSwitchPreference
-       android:key="notification_sound_vib_screen_on"
-       android:title="@string/notification_sound_vib_screen_on_title"
-       android:summary="@string/notification_sound_vib_screen_on_summary"
-       android:defaultValue="true" />
-
-    <com.ssos.support.preferences.SystemSettingSwitchPreference
-        android:key="status_bar_notif_count"
-        android:title="@string/status_bar_notif_count_title"
-        android:summary="@string/status_bar_notif_count_summary"
-        android:defaultValue="false" />
-
-    <!-- Horizon notifications light -->
-    <com.ssos.support.preferences.SystemSettingMasterSwitchPreference
-        android:key="pulse_ambient_light"
-        android:title="@string/horizon_light_title"
-        android:summary="@string/horizon_light_summary"
-        android:fragment="com.ssos.shapeshifter.fragments.system_misc.HorizonLightSettings"
-        android:defaultValue="false" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/notification_headers_section_title">
-
-        <com.ssos.support.preferences.SystemSettingSwitchPreference
-           android:key="notification_headers"
-           android:title="@string/notification_headers_title"
-           android:summary="@string/notification_headers_summary"
-           android:defaultValue="true" />
-
-        <com.ssos.support.preferences.SystemSettingSwitchPreference
-           android:key="center_notification_headers"
-           android:title="@string/center_notification_headers_title"
-           android:summary="@string/center_notification_headers_summary"
-           android:dependency="notification_headers"
-           android:defaultValue="false" />
-
-    </PreferenceCategory>
-
 </PreferenceScreen>

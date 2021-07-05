@@ -109,15 +109,6 @@
         <item>2</item>
     </string-array>
 
-    <!--  Volume Panel  -->
-    <string-array name="volume_panel_values" translatable="false">
-        <item>@string/volume_panel_stock_val</item>
-        <item>@string/volume_panel_aosp_val</item>
-        <item>@string/volume_panel_compact_val</item>
-        <item>@string/volume_panel_oreo_val</item>
-        <item>@string/volume_panel_tiled_val</item>
-    </string-array>
-
     <!-- Volume step options. -->
     <string-array name="volume_steps_entries" translatable="false">
         <item>@string/volume_steps_60</item>

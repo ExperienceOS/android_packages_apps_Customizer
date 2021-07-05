@@ -37,7 +37,6 @@
     <string name="navigationbar_summary">Configure system navigation options</string>
     <string name="gesture_options_title">Gestures</string>
     <string name="gesture_options_summary">Enable/disable device specific user actions</string>
-    <string name="volume_rocker_title">Volume rocker</string>
     <string name="volume_rocker_summary">Set default behavior and actions for vol +/- keys</string>
     <string name="hw_keys_title">Hardware keys</string>
     <string name="hw_keys_summary">Assign actions for physical navigation buttons</string>
@@ -62,16 +61,6 @@
     <string name="status_bar_items_title">Statusbar items</string>
     <string name="status_bar_items_summary">Configure statusbar indicators</string>
 
-    <!-- Lockscreen -->
-    <string name="lockscreen_aosp_title">Native controls</string>
-    <string name="lockscreen_aosp_summary">Configure AOSP options for lockscreen &amp; ambient display</string>
-    <string name="lockscreen_general_title">General options</string>
-    <string name="lockscreen_general_summary">Add or remove visual elements of your lockscreen</string>
-    <string name="lockscreen_tuner_title">Lockscreen tuner</string>
-    <string name="lockscreen_tuner_summary">Add or remove tuner parts of your lockscreen</string>
-    <string name="lockscreen_weather_title">Weather options</string>
-    <string name="lockscreen_weather_summary">Configure lockscreen weather</string>
-
     <!-- System/ Misc -->
     <string name="animations_category_title">Animations</string>
     <string name="animations_category_summary">Set custom animations for certain transitions</string>
@@ -82,8 +71,6 @@
     <string name="miscellaneous_summary">Uncategorized options</string>
     <string name="changelog_title">Changelog</string>
     <string name="changelog_summary">List of recent commits added to ShapeShiftOS</string>
-    <string name="led_settings_title">LED settings</string>
-    <string name="led_settings_summary">Configure the LED light for supported options</string>
 
 <!-- OTHER -->
     <!-- Empty Preference Screen (if applicable) -->
@@ -92,23 +79,11 @@
     <string name="dummy_string"> </string>
 
     <!-- Sub-Categorized XMLs - DO NOT REMOVE -->
-    <string name="active_edge_title">Active Edge</string>
-    <string name="ambient_music_display">Music ticker</string>
-    <string name="aware_settings_title">Motion Sense</string>
     <string name="battery_style_statusbar">Statusbar battery</string>
     <string name="battery_style_qs">Quick panel battery</string>
-    <string name="brightness_control_category">Brightness control</string>
-    <string name="custom_header_title">Custom header</string>
-    <string name="led_notifications_title">LED notifications</string>
-    <string name="led_battery_title">Battery LED</string>
-    <string name="lockscreen_visualizer_enable">Music Visualizer</string>
     <string name="qs_panel_layout_category">QS panel layout</string>
-    <string name="smart_pixels_title">Smart Pixels</string>
     <string name="volume_steps_title">Volume steps</string>
     <string name="power_menu_category">Power menu</string>
-    <string name="pulse_settings">Pulse</string>
-    <string name="flashlight_category">Flashlight</string>
-    <string name="lockscreen_fod_category">Fingerprint On Display</string>
     <string name="navigation_navigation_bar_category">Navigation</string>
     <string name="gestures_navigation_bar_category">Gestures</string>
 
@@ -184,12 +159,6 @@
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
     <string name="qs_tile_title_visibility_summary">Show a label under each quicksettings title</string>
 
-    <!-- Notification headers -->
-    <string name="notification_headers_title">Notification Headers</string>
-    <string name="notification_headers_summary">Show headers in the notification shade\nRequires a SystemUI restart</string>
-    <string name="center_notification_headers_title">Center notification headers</string>
-    <string name="center_notification_headers_summary">Whether to Center notification headers\nRequires a SystemUI restart</string>
-
     <!-- QS rows and columns -->
     <string name="qs_columns_rows_category_title">QS columns and rows</string>
     <string name="qs_rows_columns_title">QS rows and columns</string>
@@ -235,22 +204,6 @@
     <string name="clock_date_left">Left of time</string>
     <string name="clock_date_position">Date position</string>
 
-    <!-- Language options - Volume rocker cursor control -->
-    <string name="cursor_section_header">Cursor</string>
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
-
-    <!-- Charging animation -->
-    <string name="charging_animation_title">Charging animation</string>
-    <string name="charging_animation_summary">Display an animation when the device is plugged in</string>
-
-    <!-- Headset ringtone audio focus -->
-    <string name="ringtone_focus_mode_title">When headset connected, incoming call plays on</string>
-    <string name="ringtone_focus_mode_dynamic">Headset only if music is active</string>
-    <string name="ringtone_focus_mode_stock">Both speaker and headset</string>
-
     <!-- Wakeup options -->
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charge</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if charger is plugged/unplugged</string>
@@ -258,110 +211,6 @@
     <!-- USB configuration -->
     <string name="usb_default_config_title">USB configuration</string>
     <string name="usb_default_config_summary">Choose the default behavior when connected to a device via USB</string>
-
-    <!-- Media art -->
-    <string name="lockscreen_media_category">Music</string>
-    <string name="media_art_title">Media cover art</string>
-    <string name="media_art_summary">Enable media cover art on the lockscreen</string>
-
-    <!-- Lockscreen album art filter -->
-    <string name="lockscreen_albumart_filter_title">Media cover art filter</string>
-    <string name="lockscreen_albumart_filter_none">None</string>
-    <string name="lockscreen_albumart_filter_grayscale">Grayscale</string>
-    <string name="lockscreen_albumart_filter_tint">Accent tinted</string>
-    <string name="lockscreen_albumart_filter_blur">Blur</string>
-    <string name="lockscreen_albumart_filter_grayblur">Grayscale and blurred</string>
-
-    <!-- Volume swap buttons -->
-    <string name="swap_volume_buttons_title">Reorient</string>
-    <string name="swap_volume_buttons_summary">Swap volume buttons when the screen is rotated</string>
-
-    <!-- Heads up -->
-    <string name="heads_up_notifications">Heads up</string>
-    <string name="summary_heads_up_enabled">Pop-up notifications are enabled</string>
-    <string name="summary_heads_up_disabled">Pop-up notifications are disabled</string>
-    <string name="add_heads_up_package">Add app</string>
-    <string name="add_heads_up_stoplist_summary">Disable heads up notifications in these applications</string>
-    <string name="add_heads_up_blacklist_summary">Disable heads up from these applications</string>
-    <string name="heads_up_stoplist_title">Stoplist</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="profile_choose_app">Choose app</string>
-    <string name="dialog_delete_title">Delete</string>
-    <string name="dialog_delete_message">Remove selected item?</string>
-
-    <!-- Battery Bar -->
-    <string name="battery_bar_title">Battery bar</string>
-    <string name="battery_bar_summary">Display and customize battery bar near status bar</string>
-    <string name="battery_bar_no_navbar">Battery bar location</string>
-    <string name="battery_bar_location_hide">Hide</string>
-    <string name="battery_bar_location_statusbar">Statusbar</string>
-    <string name="battery_bar_color">Battery bar color</string>
-    <string name="battery_bar_charging_color">Battery bar charging color</string>
-    <string name="battery_bar_battery_low_color">Battery bar low battery color</string>
-    <string name="battery_bar_cat">Battery bar style</string>
-    <string name="battery_bar_style_title">Battery bar alignment</string>
-    <string name="battery_bar_thickness_title">Battery bar thickness</string>
-    <string name="battery_bar_animate_title">Charging animation</string>
-    <string name="battery_bar_style_regular">Regular</string>
-    <string name="battery_bar_style_center_mirrored">Center-mirrored</string>
-    <string name="battery_bar_style_reversed">Reversed</string>
-    <string name="battery_bar_use_charging_color">Custom charging color</string>
-    <string name="battery_bar_blend_color_title">Blend colors</string>
-    <string name="battery_bar_blend_color_summary">Blend full/empty colors corresponding to battery percentage</string>
-    <string name="battery_bar_blend_color_reverse_title">Reverse color direction</string>
-    <string name="battery_bar_blend_color_reverse_summary_off">Full &#8594; empty: red &#8592; green &#8592; blue &#8592; red</string>
-    <string name="battery_bar_blend_color_reverse_summary_on">Full &#8594; empty: red &#8594; green &#8594; blue &#8594; red</string>
-
-    <!-- Horizon light -->
-    <string name="horizon_light_title">Horizon light</string>
-    <string name="horizon_light_summary">Light ambient edges for pulsing notifications</string>
-    <string name="horizon_light_show_always_title">Show for all doze events</string>
-    <string name="horizon_light_show_always_summary">Show lights for all doze events and not just notifications</string>
-    <string name="horizon_light_enabled_title">Show on AOD</string>
-    <string name="aod_disabled">AOD is disabled</string>
-    <string name="horizon_light_enabled_summary">Keep showing horizon light on AOD</string>
-    <string name="horizon_light_hide_aod_title">Hide AOD content</string>
-    <string name="horizon_light_hide_aod_summary">Hide AOD content when edges are lighted</string>
-    <string name="horizon_light_layout_title">Light view</string>
-    <string name="horizon_light_layout_solid">Solid</string>
-    <string name="horizon_light_layout_faded">Faded</string>
-    <string name="horizon_light_duration_title">Duration</string>
-    <string name="horizon_light_duration_summary">Time it takes for each animation to complete</string>
-    <string name="horizon_light_repeats_title">Repeats</string>
-    <string name="horizon_light_repeats_summary">Amount of times the animation should show\n0 for infinite</string>
-    <string name="horizon_light_repeat_direction_title">Light repeat mode</string>
-    <string name="horizon_light_repeat_direction_restart">Restart</string>
-    <string name="horizon_light_repeat_direction_reverse">Reverse</string>
-    <string name="horizon_light_timeout_title">Timeout</string>
-    <string name="horizon_light_timeout_forever">Forever</string>
-    <string name="horizon_light_timeout_half_minute">30 seconds</string>
-    <string name="horizon_light_timeout_minute">1 minute</string>
-    <string name="horizon_light_timeout_three_minutes">3 minutes</string>
-    <string name="horizon_light_timeout_five_minutes">5 minutes</string>
-    <string name="horizon_light_timeout_ten_minutes">10 minutes</string>
-    <string name="set_to_zero">Set repeats to 0 to enable</string>
-    <string name="horizon_color_mode_title">Color mode</string>
-    <string name="horizon_color_mode_accent">Accent color</string>
-    <string name="horizon_color_mode_wall">Wallpaper dominant color</string>
-    <string name="horizon_color_mode_notification">Notification icon color</string>
-    <string name="horizon_color_mode_custom">@string/horizon_light_color_title</string>
-    <string name="horizon_light_color_title">Custom color</string>
-
-    <!-- Supress notifications if screen is on -->
-    <string name="notification_sound_vib_screen_on_title">Notification sound if active</string>
-    <string name="notification_sound_vib_screen_on_summary">Play sound and vibration for notifications when screen is on</string>
-
-    <!-- Blink flashlight for incoming calls -->
-    <string name="flashlight_on_call_title">Blink Flashlight for incoming call</string>
-    <string name="flashlight_on_call_disabled">Disabled</string>
-    <string name="flashlight_on_call_ringer">When ringing</string>
-    <string name="flashlight_on_call_no_ringer">When ringer is silent</string>
-    <string name="flashlight_on_call_silent">When entirely silent (no ringer or vibrator)</string>
-    <string name="flashlight_on_call_always">Always</string>
-    <string name="flashlight_on_call_ignore_dnd_title">Ignore DND</string>
-    <string name="flashlight_on_call_ignore_dnd_summary">Whether to flash when in Do Not Disturb mode</string>
-    <string name="flashlight_on_call_rate_title">Rate</string>
-    <string name="flashlight_on_call_rate_summary">Flashlight on call blink rate</string>
 
     <!-- Status bar tuner-->
     <string name="statusbar_title">Icons</string>
@@ -396,20 +245,6 @@
     <string name="vowifi_icon_simple1">Simple Icon</string>
     <string name="vowifi_icon_simple2">Syberia Icon</string>
     <string name="vowifi_icon_simple3">Classic Icon</string>
-
-    <!-- Lock FP icon -->
-    <string name="lock_fp_icon_title">Fingerprint icon on lockscreen</string>
-    <string name="lock_fp_icon_summary">Display a fingerprint icon under the clock date when it is possible to unlock using fingerprint</string>
-    <string name="lock_fp_icon_fod_summary">This feature is unsupported on FOD-equipped devices</string>
-    <string name="lock_fp_icon_no_fp_summary">This feature is unsupported on devices without a fingerprint sensor</string>
-    <string name="lock_fp_icon_rart_user_summary">This feature is unsupported on devices without enrolled fingerprints</string>
-
-
-    <!-- Aggressive battery -->
-    <string name="aggressive_battery_saver_title">Aggressive Battery Saver</string>
-    <string name="aggressive_battery_saver_explainer">"Aggressive Idle is a feature that makes the device idle constants more aggressive and ignores device motion when entering doze mode.
-
-Aggressive Standby is a feature that stops apps from running in the background as much."</string>
 
     <!-- Gestures -->
     <string name="double_tap_title">Double tap</string>

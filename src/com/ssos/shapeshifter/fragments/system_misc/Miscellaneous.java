@@ -54,7 +54,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
 
     private static final String RINGTONE_FOCUS_MODE = "ringtone_focus_mode";
     private static final String POCKET_JUDGE = "pocket_judge";
-    private static final String SMART_PIXELS = "smart_pixels";
 
     private ListPreference mHeadsetRingtoneFocus;
     private Preference mPocketJudge;
@@ -63,7 +62,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.miscellaneous);
-        updateSmartPixelsPreference();
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -81,17 +79,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                 com.android.internal.R.bool.config_pocketModeSupported);
         if (!mPocketJudgeSupported)
             prefScreen.removePreference(mPocketJudge);
-    }
-
-    private void updateSmartPixelsPreference() {
-        PreferenceScreen prefSet = getPreferenceScreen();
-        boolean enableSmartPixels = getContext().getResources().
-                getBoolean(com.android.internal.R.bool.config_enableSmartPixels);
-        Preference smartPixels = findPreference(SMART_PIXELS);
-
-        if (!enableSmartPixels){
-            prefSet.removePreference(smartPixels);
-        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -133,11 +120,6 @@ public class Miscellaneous extends SettingsPreferenceFragment implements
                         com.android.internal.R.bool.config_pocketModeSupported);
                 if (!mPocketJudgeSupported)
                     keys.add(POCKET_JUDGE);
-
-                boolean mSmartPixelsSupported = res.getBoolean(
-                        com.android.internal.R.bool.config_enableSmartPixels);
-                if (!mSmartPixelsSupported)
-                    keys.add(SMART_PIXELS);
 
                 return keys;
             }

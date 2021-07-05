@@ -103,6 +103,7 @@
     <string name="led_battery_title">Battery LED</string>
     <string name="lockscreen_visualizer_enable">Music Visualizer</string>
     <string name="qs_panel_layout_category">QS panel layout</string>
+    <string name="smart_pixels_title">Smart Pixels</string>
     <string name="volume_steps_title">Volume steps</string>
     <string name="power_menu_category">Power menu</string>
     <string name="pulse_settings">Pulse</string>

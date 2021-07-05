@@ -21,8 +21,14 @@ import android.content.Context;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
+import androidx.preference.Preference;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 
-import androidx.preference.*;
+import androidx.preference.PreferenceGroup;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragment;
+import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -60,7 +66,6 @@ public class LedSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.led_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
-        PreferenceCategory overallPreferences = (PreferenceCategory) findPreference("notification_led_pref");
 
         mFlashOnCallRate = (CustomSeekBarPreference)
                 findPreference(PREF_FLASH_ON_CALL_RATE);
@@ -82,15 +87,16 @@ public class LedSettings extends SettingsPreferenceFragment implements
 
         mBatteryLight = (SystemSettingMasterSwitchPreference)
                 findPreference(KEY_BATT_LIGHT);
-            
-        boolean enabled = Settings.System.getInt(resolver,
-                KEY_BATT_LIGHT, 1) == 1;
-        mBatteryLight.setChecked(enabled);
-        mBatteryLight.setOnPreferenceChangeListener(this);
-            
-        if (!getResources().getBoolean(com.android.internal.R.bool.config_hasNotificationLed)) {
-            prefScreen.removePreference(findPreference("notification_led_pref"));
-        }            
+        boolean hasLed = getResources().getBoolean(
+                com.android.internal.R.bool.config_hasNotificationLed);
+        if (hasLed) {
+            boolean enabled = Settings.System.getInt(resolver,
+                    KEY_BATT_LIGHT, 1) == 1;
+            mBatteryLight.setChecked(enabled);
+            mBatteryLight.setOnPreferenceChangeListener(this);
+        } else {
+            mBatteryLight.setVisible(false);
+        }
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

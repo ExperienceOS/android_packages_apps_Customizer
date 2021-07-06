@@ -37,7 +37,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.android.settings.R;
 
-import com.exos.customizerhub.display.AccentColorPreferenceController;
+//import com.exos.customizerhub.display.AccentColorPreferenceController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,6 +66,7 @@ public class Themer extends DashboardFragment implements Indexable  {
         return buildPreferenceControllers(context, getSettingsLifecycle(), this);
     }
 
+    /*
     private static List<AbstractPreferenceController> buildPreferenceControllers(
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
@@ -74,6 +75,7 @@ public class Themer extends DashboardFragment implements Indexable  {
         controllers.add(new AccentColorPreferenceController(context));
         return controllers;
     }
+    */
 
     public static final SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider() {

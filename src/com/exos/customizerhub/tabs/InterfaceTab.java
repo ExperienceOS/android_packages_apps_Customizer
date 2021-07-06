@@ -53,13 +53,6 @@ public class InterfaceTab extends SettingsPreferenceFragment implements
             mQuickSettings = (CardPreference) findPreference(QUICK_SETTINGS_CATEGORY);
         }
 
-        CardPreference mHeadsup = findPreference("headsup_category");
-        if (!getResources().getBoolean(R.bool.headsup_category_isVisible)) {
-            getPreferenceScreen().removePreference(mHeadsup);
-        } else {
-            mHeadsup = (CardPreference) findPreference(HEADSUP_CATEGORY);
-        }
-
         CardPreference mRecents = findPreference("recents_category");
         if (!getResources().getBoolean(R.bool.recents_category_isVisible)) {
             getPreferenceScreen().removePreference(mRecents);

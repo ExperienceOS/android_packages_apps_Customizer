@@ -47,7 +47,6 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.lockscreen_general);
 
     }
 
@@ -67,7 +66,6 @@ public class LockscreenGeneral extends SettingsPreferenceFragment implements
                     boolean enabled) {
                 final ArrayList<SearchIndexableResource> result = new ArrayList<>();
                 final SearchIndexableResource sir = new SearchIndexableResource(context);
-                sir.xmlResId = R.xml.lockscreen_general;
                 result.add(sir);
                 return result;
             }

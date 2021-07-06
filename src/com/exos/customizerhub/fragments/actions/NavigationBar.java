@@ -64,6 +64,8 @@ public class NavigationBar extends SettingsPreferenceFragment implements
     private SystemSettingSwitchPreference mPixelAnimationNavigation;
     private SecureSettingSwitchPreference mInvertNavigation;
 
+    private boolean mVibraSupported;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,8 +76,6 @@ public class NavigationBar extends SettingsPreferenceFragment implements
         final Resources res = getResources();
         Context mContext = getContext();
         
-        mVibraSupported = mContext.getResources().getBoolean(
-                com.android.internal.R.bool.config_vibrateOnIconAnimation);
         mPixelAnimationNavigation = findPreference(PIXEL_ANIMATION_NAVIGATION);
         mInvertNavigation = findPreference(INVERT_NAVIGATION);
         mBackGestureHaptic = findPreference(BACK_GESTURE_HAPTIC);

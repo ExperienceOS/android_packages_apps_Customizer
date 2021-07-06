@@ -49,9 +49,6 @@ import java.util.List;
 public class QuickSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, Indexable {
 
-    private static final String QS_MEDIA_PLAYER = "qs_media_player";
-
-    private SystemSettingSwitchPreference mQSMediaPlayer;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -59,22 +56,10 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.quick_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
-
-        mQSMediaPlayer = findPreference(QS_MEDIA_PLAYER);
-        mQSMediaPlayer.setChecked((Settings.System.getInt(resolver,
-                Settings.System.QS_MEDIA_PLAYER, 1) == 1));
-        mQSMediaPlayer.setOnPreferenceChangeListener(this);
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
-        if (preference == mQSMediaPlayer) {
-            boolean value = (Boolean) newValue;
-            Settings.System.putInt(resolver,
-                    Settings.System.QS_MEDIA_PLAYER, value ? 1 : 0);
-            com.exos.customizerhub.utils.Utils.showSystemUiRestartDialog(getContext());
-            return true;
-        }
         return false;
     }
 

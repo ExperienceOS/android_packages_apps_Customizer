@@ -33,13 +33,11 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
     private static final String GENERAL_NOTIFICATIONS = "general_notifications";
     private static final String MISCELLANEOUS_CATEGORY = "miscellaneous_category";
     private static final String CHANGELOG_CATEGORY = "changelog";
-    private static final String LED_SETTINGS_CATEGORY = "led_settings";
 
     private CardPreference mAnimations;
     private CardPreference mGeneral;
     private CardPreference mMiscellaneous;
     private CardPreference mChangelog;
-    private CardPreference mLedSettings;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,18 +72,6 @@ public class SystemMiscTab extends SettingsPreferenceFragment implements
 //            mChangelog = (CardPreference) findPreference(CHANGELOG_CATEGORY);
 //        }
 
-        /**
-         * Only show LED category if device supports LED options for either
-         * battery OR notifications. Also needs boolean set "true" in device
-         */
-        CardPreference mLedSettings = findPreference("led_settings");
-        if (!getResources().getBoolean(R.bool.led_settings_category_isVisible)) {
-//            (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveNotificationLed)) ||
-//            (!getResources().getBoolean(com.android.internal.R.bool.config_intrusiveBatteryLed))) {
-            getPreferenceScreen().removePreference(mLedSettings);
-        } else {
-            mLedSettings = (CardPreference) findPreference(LED_SETTINGS_CATEGORY);
-        }
     }
 
     @Override

@@ -301,5 +301,6 @@
     <string name="show_fourg_icon_title">4G icon</string>
     <string name="show_fourg_icon_summary">Display 4G in signal icon instead of LTE</string>
 
+    <!-- (Temporary) Accent picker -->
+    <string name="display_style_color_hint_title">Choose color</string>
 </resources>
-

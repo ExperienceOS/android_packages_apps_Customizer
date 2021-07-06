@@ -51,20 +51,6 @@ public class StatusBarTab extends SettingsPreferenceFragment implements
             mBattery = (CardPreference) findPreference(BATTERY_CATEGORY);
         } 
 
-        CardPreference mClockOptions = findPreference("clock_options_category");
-        if (!getResources().getBoolean(R.bool.clock_category_isVisible)) {
-            getPreferenceScreen().removePreference(mClockOptions);
-        } else {
-            mClockOptions = (CardPreference) findPreference(CLOCK_OPTIONS_CATEGORY);
-        }
-
-        CardPreference mTraffic = findPreference("traffic_category");
-        if (!getResources().getBoolean(R.bool.traffic_category_isVisible)) {
-            getPreferenceScreen().removePreference(mTraffic);
-        } else {
-            mTraffic = (CardPreference) findPreference(TRAFFIC_CATEGORY);
-        }
-
         CardPreference mStatusBarItems = findPreference("status_bar");
         if (!getResources().getBoolean(R.bool.statusbar_icon_blacklist_category_isVisible)) {
             getPreferenceScreen().removePreference(mStatusBarItems);

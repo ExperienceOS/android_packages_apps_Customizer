@@ -46,13 +46,6 @@ public class ActionsTab extends SettingsPreferenceFragment implements
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.tab_actions);
 
-        CardPreference mPowerButton = findPreference("powerbutton_category");
-        if (!getResources().getBoolean(R.bool.powerbutton_category_isVisible)) {
-            getPreferenceScreen().removePreference(mPowerButton);
-        } else {
-            mPowerButton = (CardPreference) findPreference(POWERBUTTON_CATEGORY);
-        }
-
         CardPreference mNavigation = findPreference("navigationbar_settings");
         if (!getResources().getBoolean(R.bool.navigationbar_category_isVisible)) {
             getPreferenceScreen().removePreference(mNavigation);
@@ -65,13 +58,6 @@ public class ActionsTab extends SettingsPreferenceFragment implements
             getPreferenceScreen().removePreference(mGestures);
         } else {
             mGestures = (CardPreference) findPreference(GESTURE_OPTIONS_CATEGORY);
-        }
-
-        CardPreference mVolumeRocker = findPreference("volume_rocker_category");
-        if (!getResources().getBoolean(R.bool.volumerocker_category_isVisible)) {
-            getPreferenceScreen().removePreference(mVolumeRocker);
-        } else {
-            mVolumeRocker = (CardPreference) findPreference(VOLUME_ROCKER_CATEGORY);
         }
 
         CardPreference mHwKeys = findPreference("hw_keys_category");

@@ -61,10 +61,12 @@ public class Themer extends DashboardFragment implements Indexable  {
         return R.xml.themer;
     }
 
+    /*
     @Override
     protected List<AbstractPreferenceController> createPreferenceControllers(Context context) {
         return buildPreferenceControllers(context, getSettingsLifecycle(), this);
     }
+    */
 
     /*
     private static List<AbstractPreferenceController> buildPreferenceControllers(

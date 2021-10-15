@@ -303,4 +303,15 @@
 
     <!-- (Temporary) Accent picker -->
     <string name="display_style_color_hint_title">Choose color</string>
+
+    <!-- Lockscreen -->
+    <string name="lockscreen_aosp_title">Native controls</string>
+    <string name="lockscreen_aosp_summary">Configure AOSP options for lockscreen &amp; ambient display</string>
+    <string name="lockscreen_general_title">General options</string>
+    <string name="lockscreen_general_summary">Add or remove visual elements of your lockscreen</string>
+    <string name="lockscreen_tuner_title">Lockscreen tuner</string>
+    <string name="lockscreen_tuner_summary">Add or remove tuner parts of your lockscreen</string>
+    <string name="lockscreen_weather_title">Weather options</string>
+    <string name="lockscreen_weather_summary">Configure lockscreen weather</string>
+    <string name="lockscreen_fod_summary">Configure settings related to the FOD view</string>
 </resources>

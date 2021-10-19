@@ -229,6 +229,7 @@
     <string name="double_tap_sleep_gesture_summary">Power display off by double tapping on status bar</string>
     <string name="double_tap_sleep_lockscreen">Double tap to sleep on lockscreen</string>
     <string name="double_tap_sleep_lockscreen_summary">Power display off by double tapping on lockscreen</string>
+    <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
 
     <!-- Accent colors -->
     <string name="prebuilt_accents_title">Accent colors</string>
